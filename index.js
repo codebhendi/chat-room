@@ -3,16 +3,11 @@ var mongoose = require('mongoose');
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
-<<<<<<< HEAD
 var morgan = require('morgan');
-=======
-
->>>>>>> a7e99b4688cbb06f35d6875e253e8ec878f8ac3f
 
 // to serve static files
 app.use(express.static(__dirname + '/public'));
 
-<<<<<<< HEAD
 // log every request to the console
 app.use(morgan('dev'));
 
@@ -144,5 +139,3 @@ io.on('connection', function(socket){
 //*** end sockets ***//
 
 server.listen(3000);
-=======
->>>>>>> a7e99b4688cbb06f35d6875e253e8ec878f8ac3f
